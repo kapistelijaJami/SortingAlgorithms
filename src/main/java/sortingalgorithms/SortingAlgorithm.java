@@ -74,7 +74,7 @@ public abstract class SortingAlgorithm {
 	}
 	
 	public <T> boolean firstIsSmallerOrEqual(List<T> list, int first, int second, Comparator<? super T> c) { //alias for inCorrectOrder
-		return SortingAlgorithm.this.inCorrectOrderOrEqual(list, first, second, c);
+		return inCorrectOrderOrEqual(list, first, second, c);
 	}
 	
 	public <T> boolean inCorrectOrderOrEqual(T first, T second, Comparator<? super T> c) {
